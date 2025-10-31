@@ -1,0 +1,35 @@
+import numpy as np
+import array as arr
+
+print("\nBasic Arrays")
+arr1 = [1, 2, 3, ['apple', 'banana', 'orange'], 4]
+print("Original Array: ", arr1)
+arr1.append(5)
+print("Append 5: ", arr1)
+
+print("\nNumpy Arrays")
+arr2 = np.array([1, 2, 3, 4])
+print("Original Array: ", arr2)
+print("Squring Array: ", arr2 * arr2)
+arr3 = np.array([[1, 2], [3, 4]])
+print("Original Array: ", arr3)
+print("Multiply By 2: ", arr3 * 2)
+
+print("\nPython Arrays")
+arr4 = arr.array('i', [1, 2, 3, 4])
+print("Original Array: ", arr4)
+arr4.append(5)
+print("Append 5: ", arr4)
+arr4.insert(1, 24)
+print("Insert 24 at pos 1: ", *arr4)
+print("Slice Array from index 1 to 4: ", *arr4[1: 4])
+arr4.remove(2)
+print("Remove 2: ", *arr4)
+arr4.pop(2)
+print("Remove element at index 2: ", *arr4)
+print("Index of 24: ", arr4.index(24))
+arr4.extend([5, 1, 5, 1])
+print("Append 5, 1, 5, 1: ", arr4)
+print("Count 5: ", arr4.count(5))
+arr4.reverse()
+print("Reverse: ", *arr4)
